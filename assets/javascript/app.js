@@ -44,9 +44,9 @@ function wait() {
 	waitTime--;
 
 	if (waitTime === 0) {
+		waitTime = 5;
+		stop();
 		if (turnNumber < (questions.length -1)) {
-			stop();
-			waitTime = 5;
 			turnNumber++;
 			updatePage();
 		}
@@ -118,7 +118,7 @@ function updatePage() {
 	$("#answer2").html(questions[turnNumber][2]);
 	$("#answer3").html(questions[turnNumber][3]);
 	$("#answer4").html(questions[turnNumber][4]);
-	$("#image").attr("src", "");
+	// $("#image").attr("src", "");
 }
 
 function startGame() {
@@ -132,6 +132,7 @@ function startGame() {
 	$("#answer3").hide();
 	$("#answer4").hide();
 	$("#start").show();
+	$("#image").show();
 	$("#startOver").hide();
 	$("#content1").hide();
 	$("#content2").hide();
