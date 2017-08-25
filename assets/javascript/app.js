@@ -118,7 +118,7 @@ function updatePage() {
 	$("#answer2").html(questions[turnNumber][2]);
 	$("#answer3").html(questions[turnNumber][3]);
 	$("#answer4").html(questions[turnNumber][4]);
-	// $("#image").attr("src", "");
+	$("#image").attr("src", "");
 }
 
 function startGame() {
@@ -159,8 +159,7 @@ $("#startOver").on("click", function() {
 $(".solution").on("click", function() {
 	if (!answered) {
 		stop();
-		console.log(questions[turnNumber][5]);
-		console.log(this.attributes.value.value);
+
 		if (questions[turnNumber][5] == this.attributes.value.value) {
 			displayRight();
 		}
