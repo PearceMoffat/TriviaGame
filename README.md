@@ -1,1 +1,1 @@
-# TriviaGame
+Futurama themed trivia game utilizing intervals to have a timer on the questions. Click an answer button to answer the question. A screen will be displayed alerting whether or not the question was answered correctly, displaying an image and the correct answer if necessary. Repeat until all the questions have been answered, then display an ending screen with total score and an option for the user to retry the quiz.
