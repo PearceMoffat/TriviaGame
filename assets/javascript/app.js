@@ -154,9 +154,6 @@ function startGame() {
 	$("#content3").hide();
 }
 
-// Initialize the game
-startGame();
-
 // Begin the quiz when the start button is clicked
 $("#start").on("click", function() {
 	$("#start").hide();
@@ -190,3 +187,6 @@ $(".solution").on("click", function() {
 		answered = true;
 	}
 });
+
+// Initialize the game
+startGame();
